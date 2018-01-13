@@ -12,7 +12,14 @@
 
     </head>
     <body>
+
+      <div class="container">
+
+        <form>
         @yield('content')
+        </form>
+
+      </div>
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
