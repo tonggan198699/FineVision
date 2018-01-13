@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/', 'EntryformController@index');
+Route::get('/show', 'EntryformController@show');
