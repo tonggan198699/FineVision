@@ -16,8 +16,8 @@
                   <div class="col-md-4">
                       <div class="form-group">
                            <label for="telephone">Telephone Number</label>
-                                <input type="tel" class="form-control" name="telephone" pattern="^\d{4}-\d{3}-\d{4}$" required>
-                                <span class="error_firstname" required>Please enter a valid uk number</span>
+                                <input type="tel" class="form-control" name="telephone" id="telephone">
+                                <span class="error_telephone" required>Please enter a valid uk number, i.e. 0xxxx xxx xxx</span>
                       </div>
                   </div>
 
@@ -25,6 +25,7 @@
                       <div class="form-group">
                            <label for="gender">Gender</label>
                                <select class="form-control" name="gender">
+                                   <option>Please Select</option>
                                    <option value="m">Male</option>
                                    <option value="f">Female</option>
                                </select>
@@ -36,8 +37,8 @@
                   <div class="col-md-4">
                       <div class="form-group">
                           <label for="dob">Date of Birth</label>
-                                <input type="text" name="dob" class="form-control">
-                                <span class="error_firstname" required>Please enter a valid date</span>
+                                <input type="text" name="dob" id="dob" class="form-control">
+                                <span class="error_dob" required>Please enter a valid date, i.e. dd/mm/yyyy</span>
                       </div>
                   </div>
             </div>
