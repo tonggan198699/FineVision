@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
+Route::get('/', 'EntryformController@index');
+
+Route::post('/storeform', 'EntryformController@store');
+
+Route::get('/welcome', function() {
+    return view('welcome');
 });
 
-Route::get('/', 'EntryformController@index');
 Route::get('/show', 'EntryformController@show');

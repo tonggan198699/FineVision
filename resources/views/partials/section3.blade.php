@@ -15,7 +15,7 @@
                       <div class="col-md-6">
                           <div class="form-group">
                                <div id="comment-message" class="form-row">
-                                    <textarea class="form-control" name="comments" rows="6" placeholder="Please enter your comments"></textarea>
+                                    <textarea class="form-control" name="comments" rows="6" placeholder="Please enter your comments" required></textarea>
                                 </div>
                           </div>
                       </div>

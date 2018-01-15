@@ -25,7 +25,6 @@
                       <div class="form-group">
                            <label for="gender">Gender</label>
                                <select class="form-control" name="gender">
-                                   <option>Please Select</option>
                                    <option value="m">Male</option>
                                    <option value="f">Female</option>
                                </select>

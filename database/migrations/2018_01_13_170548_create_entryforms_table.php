@@ -15,12 +15,12 @@ class CreateEntryformsTable extends Migration
     {
         Schema::create('entryforms', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('firstname');
-            $table->string('lastname');
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
             $table->string('email')->unique();
             $table->string('telephone');
-            $table->enum('gender',['m','f']);
-            $table->date('dob');
+            $table->enum('gender',['m','f'])->nullable();
+            $table->text('dob');
             $table->text('comments');
             $table->timestamps();
         });
