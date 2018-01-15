@@ -3,7 +3,7 @@
 
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              <a data-toggle="collapse" data-parent="#accordion">
                 Step 3: Final Comments
               </a>
           </h4>

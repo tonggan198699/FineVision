@@ -8350,3 +8350,45 @@ button.close {
   }
 }
 
+body {
+  background-color: #D6EBF2;
+}
+
+#body {
+  left: 15%;
+  padding: 60px;
+}
+
+#accordion {
+  border-radius: 10px;
+}
+
+.btn.btn-default {
+  border-radius: 25px;
+  background-color: #665BBB;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn.btn-default:hover {
+  border-radius: 25px;
+  background-color: #665BBB;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.panel-default > .panel-heading {
+  padding: 18px 15px 10px 30px;
+  height: 50px;
+  color: #fff;
+  background-color: #FDD017;
+}
+
+.panel-body {
+  background-color: #E6E6E6;
+}
+
+span {
+  color: red;
+}
+

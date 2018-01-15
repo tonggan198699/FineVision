@@ -3,8 +3,7 @@
 
   @section('content')
 
-<div class="container">
-
+<div class="container" id="body">
 
       <form method="post" action="/storeform">
       {{ csrf_field() }}
@@ -18,8 +17,6 @@
       </div>
 
       <form>
-
-
 
 </div>
 
