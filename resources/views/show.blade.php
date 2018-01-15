@@ -1,51 +1,61 @@
 @extends('app')
 
 <div class="container">
+  <table class="table">
+    <thead>
+     <tr>
+       <th>ID</th>
+       <th>Firstname</th>
+       <th>Surname</th>
+       <th>Email</th>
+       <th>Telephone</th>
+       <th>Gender</th>
+       <th>Date of Birth</th>
+       <th>Comments</th>
+     </tr>
+   </thead>
+
+  <tbody>
   @foreach($information as $info)
+    <tr>
+      @if($info->id)
+      <td><h3>{{$info->id}}</h3></td>
+      @endif
+
       @if($info->firstname)
-      <h3>First Name: {{$info->firstname}}</h3>
-      @else
-      <h3>First Name: N.A</h3>
+      <td><h3>{{$info->firstname}}</h3></td>
       @endif
 
       @if($info->lastname)
-      <h3>Surname: {{$info->lastname}}</h3>
-      @else
-      <h3>Surname: N.A</h3>
+      <td><h3>{{$info->lastname}}</h3></td>
       @endif
 
       @if($info->email)
-      <h3>Email: {{$info->email}}</h3>
-      @else
-      <h3>Email: N.A</h3>
+      <td><h3>{{$info->email}}</h3></td>
       @endif
 
       @if($info->telephone)
-      <h3>Telephone: {{$info->telephone}}</h3>
-      @else
-      <h3>Telephone: N.A</h3>
+      <td><h3>{{$info->telephone}}</h3></td>
       @endif
 
       @if($info->gender == "m")
-      <h3>Male</h3>
-      @elseif ($info->gender == "f")
-      <h3>Female</h3>
+      <td><h3>Male</h3></td>
       @else
-      <h3>Gender: N.A</h3>
+      <td><h3>Female</h3></td>
       @endif
 
       @if($info->dob)
-      <h3>Date of Birth: {{$info->dob}}</h3>
-      @else
-      <h3>Date of Birth: N.A</h3>
+      <td><h3>Date of Birth: {{$info->dob}}</h3></td>
       @endif
 
       @if($info->comments)
-      <h3>Comments: {{$info->comments}}</h3>
-      @else
-      <h3>Comments: N.A</h3>
+      <td><h3>Comments: {{$info->comments}}</h3></td>
       @endif
+    </tr>
   @endforeach
+  <tbody>
+</table>
+
 
   <a href="/" class="btn btn-primary">Home</a>
 
