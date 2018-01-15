@@ -15,12 +15,7 @@
     <body>
 
       <div class="container">
-
-              <form method="post" action="/storeform">
-                {{ csrf_field() }}
-                @yield('content')
-              </form>
-
+        @yield('content')
       </div>
 
         <!-- Scripts -->

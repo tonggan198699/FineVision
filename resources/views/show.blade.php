@@ -45,11 +45,11 @@
       @endif
 
       @if($info->dob)
-      <td><h3>Date of Birth: {{$info->dob}}</h3></td>
+      <td><h3>{{$info->dob}}</h3></td>
       @endif
 
       @if($info->comments)
-      <td><h3>Comments: {{$info->comments}}</h3></td>
+      <td><h3>{{$info->comments}}</h3></td>
       @endif
     </tr>
   @endforeach
