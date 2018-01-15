@@ -8,6 +8,7 @@
          <!-- Styles -->
          <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+
         <title>Data Entry Form</title>
 
     </head>
@@ -15,14 +16,18 @@
 
       <div class="container">
 
-        <form>
+
         @yield('content')
-        </form>
+
 
       </div>
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
+
+        <!-- jquery and jquery validate cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 
     </body>
 </html>

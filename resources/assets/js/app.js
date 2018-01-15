@@ -7,16 +7,41 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+$(function() {
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+  $(".error_email").hide();
 
-const app = new Vue({
-    el: '#app'
+  var error_email = false;
+
+  $("#email").focusout(function() {
+    check_email();
+  });
+
+  function check_firstname() {
+
+      var firstname_length = $("#firstname").val().length;
+
+      if(!(firstname_length > 0)) {
+        $(".error_firstname").show();
+        error_firstname = true;
+      }else {
+        $(".error_firstname").hide();
+      }
+  }
+
+  function check_email() {
+
+      var email_pattern = new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
+
+      if(email_pattern.test($("#email").val())) {
+        $(".error_email").hide();
+        $('#next1').prop('disabled', false);
+      }else{
+        $(".error_email").show();
+        $('#next1').prop('disabled', true);
+        error_email = true;
+      }
+  }
+
 });
