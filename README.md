@@ -37,3 +37,11 @@ Extra niceties:
 - Use pretty CSS3 buttons with a gradient and rounded corners
 - Use the html5 doctype
 - Make the validation part of the design
+
+# Application pictures
+
+<p align="center"><img src="https://image.ibb.co/fePP8b/fine_Vision1.jpg"></p>
+<p align="center"><img src="https://image.ibb.co/iCJTZG/fine_Vision2.jpg"></p>
+<p align="center"><img src="https://image.ibb.co/ghmXuG/fine_Vision3.jpg"></p>
+<p align="center"><img src="https://image.ibb.co/mg5NTb/fine_Vision4.jpg"></p>
+<p align="center"><img src="https://image.ibb.co/k7DRob/fine_Vision5.jpg"></p>
